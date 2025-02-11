@@ -6,7 +6,7 @@ const app = express()
 const connectDB = require('./db/connect')
 const projectsRouter = require('./routes/projects')
 
-app.use(cors)
+app.use(cors())
 app.use(express.json())
 app.get('/', (req, res) => {
 	res.send(
